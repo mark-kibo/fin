@@ -68,7 +68,7 @@ function signup() {
                     <Link href='/login'><button className='bg-[#1F5780] rounded-md p-3 sm:col-span-2 w-full text-white' type="submit">Sign Up</button></Link>
                 </form>
                 <p className='cursor-pointer inline-block align-bottom mt-5'>
-                    <Link href='/Login'><a>Already have an account? </a><span className='font-bold'>Login</span></Link>
+                    <Link href='/login'><a>Already have an account? </a><span className='font-bold'>Login</span></Link>
                 </p>
             </div>
 

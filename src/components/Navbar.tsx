@@ -19,10 +19,13 @@ import InfoRoundedIcon from '@mui/icons-material/InfoRounded';
 import ManageAccountsRoundedIcon from '@mui/icons-material/ManageAccountsRounded';
 import {useProSidebar } from "react-pro-sidebar"
 import DeleteIcon from '@mui/icons-material/Delete';
-
+import AddIcCallSharpIcon from '@mui/icons-material/AddIcCallSharp';
+import LockResetSharpIcon from '@mui/icons-material/LockResetSharp';
+import LockOpenSharpIcon from '@mui/icons-material/LockOpenSharp';
 import Tooltip from '@mui/material/Tooltip';
 import { useRouter } from 'next/navigation';
 import { SideBarContext } from '@/context/SideBarContext';
+import FeedSharpIcon from '@mui/icons-material/FeedSharp';
 
 export default function Navbar() {
   const [auth, setAuth] = React.useState(true);
@@ -108,7 +111,7 @@ export default function Navbar() {
             aria-label="menu"
             sx={{ mr: 2 }}
           >
-            <ConnectWithoutContactRoundedIcon/>
+            <AddIcCallSharpIcon/>
           </IconButton>
           </Tooltip>
           
@@ -123,7 +126,7 @@ export default function Navbar() {
             aria-label="menu"
             sx={{ mr: 2 }}
           >
-            <InfoRoundedIcon className={iconstyle} />
+            <FeedSharpIcon className={iconstyle} />
           </IconButton>
           </Tooltip>
           
@@ -137,7 +140,7 @@ export default function Navbar() {
             aria-label="menu"
             sx={{ mr: 2 }}
           >
-            <ManageAccountsRoundedIcon className={iconstyle} />
+            <LockOpenSharpIcon className={iconstyle} />
           </IconButton>
           </Tooltip>
           

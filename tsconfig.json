@@ -23,6 +23,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/components/dashlayout.jsx", "src/components/ApexCharts/AreaChart.jsx", "src/components/ApexCharts/barChart.jsx", "src/components/ApexCharts/ColumnChart.jsx", "src/components/ApexCharts/PieChart.jsx", "src/components/SideBarContent.tsx", "src/components/SideNavContainer/Subcontainer.jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/components/dashlayout.jsx", "src/components/ApexCharts/AreaChart.jsx", "src/components/ApexCharts/barChart.jsx", "src/components/ApexCharts/ColumnChart.jsx", "src/components/ApexCharts/PieChart.jsx", "src/components/SideBarContent.tsx", "src/components/SideNavContainer/Subcontainer.jsx", "src/context/SideBarContext.tsx"],
   "exclude": ["node_modules"]
 }

@@ -1,6 +1,7 @@
 import { SideBarContext } from '@/context/SideBarContext';
 import React, { useContext } from 'react'
 import SideNavRow from '@/components/SideNavContainer/SideNavRowcopy'
+import { ChevronLeft } from '@mui/icons-material';
 const SubSideBar = () => {
 
   const {subContainerEntries, setSubContainer, setSubContainerEntries} = useContext(SideBarContext);
@@ -8,8 +9,8 @@ const SubSideBar = () => {
   
   return (
       <div >
-            <div className="bg-gray-200 text-center hover:bg-gray-400  p-2 " onClick={() => setSubContainer(false)}>
-            <i className="fas fa-chevron-left"></i> MAIN MENU
+            <div className="bg-gray-200 text-center hover:bg-gray-400  p-2  flex " onClick={() => setSubContainer(false)}>
+            <ChevronLeft/>MAIN MENU
             </div>
             
             {subContainerEntries.map(subEntry => (
