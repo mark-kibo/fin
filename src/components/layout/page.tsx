@@ -14,7 +14,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
 			<section className="min-h-screen bg-[#ededed] lg:mx-20 sm:mx-0 ">
 				<div className="mt-50">
 					<div className="text-2xl capitalize rounded-md  px-4 py-2">
-						<Breadcrumbs aria-label="breadcrumb">
+						<Breadcrumbs aria-label="breadcrumb" className="z-20">
 							<h2 color="text.primary mt-2">
 								{pathname === "/" ? (
 									<Link href={`/`}>/Dashboard</Link>
