@@ -29,8 +29,8 @@ const SideBar: React.FC = () => {
 
 
           return(
-           <>
-           <div>{menus.label}</div>
+           <div className="mx-4">
+           <div className="p-2 text-center font-semibold">{menus.label}</div>
            {
             menus.submenu.map(subEntry=>{
               return(
@@ -40,7 +40,7 @@ const SideBar: React.FC = () => {
            }
            
            <hr />
-           </>
+           </div>
             
           )
         })}

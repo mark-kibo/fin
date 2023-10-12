@@ -8,7 +8,7 @@ const SubSideBar = () => {
   
   return (
       <div >
-            <div className="sub-header" onClick={() => setSubContainer(false)}>
+            <div className="bg-gray-200 text-center hover:bg-gray-400  p-2 " onClick={() => setSubContainer(false)}>
             <i className="fas fa-chevron-left"></i> MAIN MENU
             </div>
             
@@ -16,12 +16,12 @@ const SubSideBar = () => {
                 
             <>
       
-              <div>{!subEntry.submenu && subEntry.label}</div>
-              { subEntry.submenu?.map(menuItems=>{
-                return(
-                  <SideNavRow key={menuItems.id} text={menuItems.label} entries={subEntry.submenu}/>
-                )
-              }) }
+              {/* <div className='p-4'>{!subEntry.submenu && subEntry.label}</div> */}
+              
+               
+                  <SideNavRow key={subEntry.id} text={subEntry.label} entries={subEntry.submenu}/>
+                
+           
                 
               </> 
           
