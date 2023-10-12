@@ -128,7 +128,7 @@ export default function TemporaryDrawer() {
           </IconButton>
         </DrawerHeader>
         <Divider className='mb-4'/>
-            {subContainer ? (<SubSideBar/>):<SideBar/>}
+            {!subContainer ? (<SideBar/>):<SubSideBar/>}            
           </SwipeableDrawer>
         </React.Fragment>
       ))}

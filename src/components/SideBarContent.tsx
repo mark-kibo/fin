@@ -24,35 +24,27 @@ const SideBar: React.FC = () => {
   return (
     <div>
       <List>
-        {entryStore &&
-          entryStore.map((entry: Object[], index: number) => {
-            return (
-              <>
-                <div
-                  className="sidenavContentHeader px-4 py-2"
-                  onClick={() => {
-                    {
-                      entry.submenu && setSubContainerEntries(entry.submenu);
-                      setSubContainer((prevstate) => !prevstate);
-                    }
-                  }}
-                >
-                  <SideNavRow text={entry.label} entries={entry.submenu}/>
-                </div>
-                {/* {entry.submenu.map((subEntry:Object[], index:number) => {
-                  return 
-                })} */}
-                {/* {
-                  entry.submenu.map((subEntry, index) => {
-                    return (<SideNavRow text={subEntry.label} entries={subEntry.submenu}/>)
-                }) */}
+        {entryStore && entryStore.map(menus=>{
 
-                
-                
-                <hr />
-              </>
-            );
-          })}
+
+
+          return(
+           <>
+           <div>{menus.label}</div>
+           {
+            menus.submenu.map(subEntry=>{
+              return(
+                <SideNavRow text={subEntry.label} entries={subEntry.submenu}/>
+              )
+            })
+           }
+           
+           <hr />
+           </>
+            
+          )
+        })}
+       
       </List>
     </div>
   );
