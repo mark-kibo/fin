@@ -53,7 +53,7 @@ export default function Navbar() {
   };
   const handleLogout=()=>{
     setAnchorEl(null);
-    router.push('/Login')
+    router.push('/login')
   }
   
   const iconstyle="black"
